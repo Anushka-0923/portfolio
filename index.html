@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anushka Goswami | Embedded Systems Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      object-fit: cover;
+      background: white;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    header h3 {
+      color: #38bdf8;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 700px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #38bdf8;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 18px;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #1e40af;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media(max-width:768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/140" alt="Profile" class="profile">
+    <h1>Anushka Goswami</h1>
+    <h3>Embedded Systems Engineer | IoT Enthusiast | Fresher</h3>
+    <p>
+      Passionate engineering student with strong interest in Embedded Systems,
+      IoT, Robotics, and Firmware Development. Eager to work on real-world
+      industrial projects and contribute innovative technical solutions.
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am an enthusiastic and detail-oriented fresher with foundational
+          knowledge in Embedded Systems, C/C++ programming, microcontrollers,
+          and hardware interfacing. I enjoy building projects involving sensors,
+          automation, and IoT technologies while continuously improving my
+          technical and problem-solving skills.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">C Programming</div>
+        <div class="skill">C++</div>
+        <div class="skill">Embedded Systems</div>
+        <div class="skill">Microcontrollers</div>
+        <div class="skill">PCB Design</div>
+        <div class="skill">IoT</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Electronics</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>Smart Home Automation</h3>
+          <p>
+            Developed an IoT-based smart home system using sensors and
+            microcontrollers for appliance automation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Temperature Monitoring System</h3>
+          <p>
+            Designed a temperature monitoring setup with sensor interfacing and
+            real-time data display.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Line Following Robot</h3>
+          <p>
+            Built an embedded robotic system capable of path tracking using
+            sensor-based control mechanisms.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>Embedded Systems Basics</h3>
+          <p>Fundamentals of embedded hardware and software development.</p>
+        </div>
+
+        <div class="card">
+          <h3>IoT Fundamentals</h3>
+          <p>Basic concepts of Internet of Things and connected devices.</p>
+        </div>
+
+        <div class="card">
+          <h3>C Programming</h3>
+          <p>Core programming concepts and logical problem-solving skills.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: yourmail@example.com</p>
+        <p>GitHub: <a href="#">Add Your GitHub Link</a></p>
+        <p>LinkedIn: <a href="#">Add Your LinkedIn Link</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Anushka Goswami | Embedded Systems Portfolio</p>
+  </footer>
+
+</body>
+</html>
